@@ -1,0 +1,61 @@
+# Local Codex workspace metadata and landing page are not part of the POS app upload.
+.codex/
+landing/
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+launcher/node_modules/
+backend/venv/
+venv/
+.venv/
+
+# Frontend and launcher build outputs
+frontend/dist/
+launcher/dist/
+*.tsbuildinfo
+launcher/src-tauri/target/
+launcher/src-tauri/binaries/*.exe
+launcher/src-tauri/binaries/*.log
+backend/build/
+backend/dist/
+builds/
+tmp/
+
+# Python build/cache outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+
+# Local databases and generated data
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+supermarket.db
+backend/.flowpos-config/
+uploads/
+backups/
+
+# Logs
+*.log
+*.out.log
+*.err.log
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

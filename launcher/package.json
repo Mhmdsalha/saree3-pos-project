@@ -1,0 +1,33 @@
+{
+  "name": "flowpos-launcher",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:web": "tsc -b && vite build",
+    "build:sidecar": "..\\backend\\venv\\Scripts\\python.exe scripts\\build_backend_sidecar.py",
+    "build": "npm run build:web",
+    "typecheck": "tsc -b",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-dialog": "^2.7.0",
+    "@tauri-apps/plugin-opener": "^2.0.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
+    "@types/node": "^24.12.2",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.2.4",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "esbuild": "^0.27.7",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1"
+  }
+}
